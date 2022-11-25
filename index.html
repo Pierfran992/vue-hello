@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet"> 
+
+    <!-- my style css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="img/hello-world-text-speech-bubble-260nw-1162382866.webp" type="image/webp">
+    <title>Hello World Vue</title>
+</head>
+<body>
+    
+    <div id="myapp" class="container">
+
+        <h1 :class="titleClassPosition">
+            <span :class="titleClass1">{{title1}}</span>
+            <span :class="titleClass2">{{title2}}</span>
+        </h1>
+
+        <img :src="img" :class="imgClass" alt="Img anime Hello World">
+
+        <p :class="descImgClass">{{descImg}}</p>
+
+    </div>
+
+    <!-- vue js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- myscript js -->
+    <script type="text/javascript" src="js/myscript.js"></script>
+
+</body>
+</html>
